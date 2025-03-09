@@ -1,0 +1,125 @@
+/*
+TODO's
+make navbar responsive
+*/
+
+
+:root {
+    --background-color: #ffffff;
+    --alternate-color: #000000;
+    --text-color: #000000;
+    --primary-color: #007bff; /* 60% color */
+    --secondary-color: #ceebe9; /* 30% color */
+    --ternary-color: #1c8783; /* 10% color */
+    --default-width: 97vw;
+    --content-heigth: 90vh;
+}
+
+:root.dark-mode {
+    --background-color: #000000;
+    --alternate-color: #ffffff;
+    --text-color: #ffffff;
+    --primary-color: #007bff; /* 60% color */
+    --secondary-color: #ceebe9; /* 30% color */
+    --ternary-color: #1c8783; /* 10% color */
+}
+
+body {
+    background-color: var(--background-color);
+    width: var(--default-width);
+    height: 100vh;
+    border: 1px solid var(--primary-color);
+}
+
+.content {
+    width: var(--default-width);
+    height: var(--content-heigth);
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer {
+    display: flex;
+    width: var(--default-width);
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style-type: none; /* Remove default list styling */
+    width: 80vw;
+    height: 5vh;
+    border: 1px solid var(--primary-color);
+}
+
+.navbar-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.2rem;
+    color: var(--text-color);
+    border-radius: 9px;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+}
+
+.navbar-child a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the text color from the parent */
+}
+
+.navbar-child:hover {
+    border-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.navbar-child:active {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.sun:hover {
+    animation: spin 3s linear infinite;
+}
+
+.moon:hover {
+    animation: pulse 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+        scale: 1.2;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    50% {
+        scale: 1.2;
+    }
+}
+
+/* Start of full page animations */
+.content section {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border: 2px solid var(--primary-color);
+    /* width: var(--default-width);
+    height: var(--content-heigth); */
+}
+
+.content section.active {
+    opacity: 1;
+}

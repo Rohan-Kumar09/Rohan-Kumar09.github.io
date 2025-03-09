@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="content">
+            <section id="home" class="active">
+                Home Content...
+            </section>
+            <section id="projects">
+                Projects Content...
+            </section>
+            <section id="skills">
+                Skills Content...
+            </section>
+            <section id="contact">
+                Contact Content...
+            </section>
+        </div>
+        <div class="footer">
+            <img src="./images/sun.png" alt="logo" id="color-logo" class="sun" onclick="changeMode()">
+            <ul class="navbar">
+                <li class="navbar-child">
+                    <a href="#" onclick="navigateTo('home')">
+                        Home
+                    </a>
+                <li class="navbar-child">
+                    <a href="#" onclick="navigateTo('projects')">
+                        Projects
+                    </a>
+                </li>
+                <li class="navbar-child">
+                    <a href="#" onclick="navigateTo('skills')">
+                        Skills
+                    </a>
+                </li>
+                <li class="navbar-child">
+                    <a href="#" onclick="navigateTo('contact')">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../src/index.js"></script>
+</body>
+</html>
