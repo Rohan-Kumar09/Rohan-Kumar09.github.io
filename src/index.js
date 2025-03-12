@@ -67,10 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
     menuButton.addEventListener('mouseleave', () => {
         // Delay slightly to allow moving from button to navbar
         setTimeout(() => {
-        if (!navbar.matches(':hover')) {
-            navbar.classList.remove('expanded');
-        }
-        }, 300);
+            if (!navbar.matches(':hover')) {
+                navbar.classList.remove('expanded');
+            }
+        }, 500);
     });
 
     navbar.addEventListener('mouseleave', () => {
