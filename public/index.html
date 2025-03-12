@@ -3,48 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rohan Kumar's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main-container">
         <div class="content">
-            <section id="home" class="active">
-                Home Content...
+            <section id="home" class="content-section">
+                Welcome Page...
             </section>
-            <section id="projects">
+            <section id="projects" class="content-section">
                 Projects Content...
             </section>
-            <section id="skills">
+            <section id="skills" class="content-section">
                 Skills Content...
             </section>
-            <section id="contact">
+            <section id="contact" class="content-section">
                 Contact Content...
             </section>
         </div>
-        <div class="footer">
-            <img src="./images/sun.png" alt="logo" id="color-logo" class="sun" onclick="changeMode()">
-            <ul class="navbar">
-                <li class="navbar-child">
-                    <a href="#" onclick="navigateTo('home')">
-                        Home
-                    </a>
-                <li class="navbar-child">
-                    <a href="#" onclick="navigateTo('projects')">
-                        Projects
-                    </a>
-                </li>
-                <li class="navbar-child">
-                    <a href="#" onclick="navigateTo('skills')">
-                        Skills
-                    </a>
-                </li>
-                <li class="navbar-child">
-                    <a href="#" onclick="navigateTo('contact')">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="img-container">
+                    <img src="./images/sun.png" alt="logo" id="color-logo" class="sun" onclick="changeMode()">
+                </div>
+                <nav class="navbar-container">
+                    <button type="button" class="menu">MENU</button>
+                    <ul class="navbar hidden">
+                        <li class="navbar-child">
+                            <a href="#home" onclick="navigateTo('home')">
+                                Home
+                            </a>
+                        </li>
+                        <li class="navbar-child">
+                            <a href="#projects" onclick="navigateTo('projects')">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="navbar-child">
+                            <a href="#skills" onclick="navigateTo('skills')">
+                                Skills
+                            </a>
+                        </li>
+                        <li class="navbar-child">
+                            <a href="#contact" onclick="navigateTo('contact')">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
     <script src="../src/index.js"></script>
