@@ -4,7 +4,8 @@ const sunImage = "./images/sun.png";
 const moonImage = "./images/moon.png";
 const sun = 'sun';
 const moon = 'moon';
-const hideTime = 2000; // 2 seconds
+const navbarHideTime = 2000; // 2 seconds
+const homeHideTime = 200; // 0.2 seconds
 
 // Dark mode toggle
 function changeMode() {
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navbar.classList.remove('hidden');
     setTimeout(() => {
         navbar.classList.add('hidden');
-    }, hideTime);
+    }, navbarHideTime);
 
     // Hide navbar after inactivity
     let hideNavbarTimeout;
@@ -49,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.classList.remove('hidden');
         hideNavbarTimeout = setTimeout(() => {
             navbar.classList.add('hidden');
-        }, hideTime);
+        }, navbarHideTime);
     }
 
     document.addEventListener('mousemove', resetHideNavbarTimeout);
@@ -70,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!navbar.matches(':hover')) {
                 navbar.classList.remove('expanded');
             }
-        }, 500);
+        }, homeHideTime);
     });
 
     navbar.addEventListener('mouseleave', () => {
