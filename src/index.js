@@ -80,3 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Copy Discord name to clipboard
+function copyDiscordName(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    const discordName = "tempName"; // Replace with your actual Discord name
+    navigator.clipboard.writeText(discordName).then(() => {
+        alert("Discord name copied to clipboard!");
+    }).catch(err => {
+        console.error("Failed to copy text: ", err);
+    });
+}

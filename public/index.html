@@ -10,13 +10,38 @@
     <div class="main-container">
         <div class="content">
             <section id="home" class="content-section">
-                <div class="home-content">
+                <div class="home-content-container">
                     <div class="home-text">
                         <div class="home-title-first-cell"> <!-- divs for adjusting name above picture -->
+                            <h6>Hello, My name is</h6>
                             <h1>Rohan Kumar</h1>
-                            <p>Full Stack Developer</p>
+                            <h6>and I'm a</h6>
+                            <h2>Software Developer</h2>
                         </div>
-                        <div class="home-titie-second-cell"></div>
+                        <div class="home-title-second-cell">
+                            <div class="home-resume-container">
+                                <a href="./files/resume.pdf" target="_blank" rel="noopener noreferrer">
+                                    <button class="resume-button">Resume</button>
+                                </a>
+                            </div>
+                            <div class="home-contacts-bar">
+                                <a href="https://github.com/Rohan-Kumar09" target="_blank" rel="noopener noreferrer">
+                                    <img src="./images/github.png" alt="github" id="github" class="contacts-icons">
+                                </a>
+                                <a href="https://www.linkedin.com/in/rohankumar099" target="_blank" rel="noopener noreferrer">
+                                    <img src="./images/linkedin.png" alt="linkedin" id="linkedin" class="contacts-icons">
+                                </a>
+                                <a href="dp" onclick="copyDiscordName(event)">
+                                    <img src="./images/discord.png" alt="discord" id="discord" class="contacts-icons">
+                                </a>
+                                <a href="mailto:rkumar51@horizon.csueastbay.edu">
+                                    <img src="./images/email.png" alt="email" id="email" class="contacts-icons">
+                                </a>
+                                <a href="./message/message.html" target="_blank" rel="noopener noreferrer">
+                                    <img src="./images/instagram.png" alt="instagram" id="instagram" class="contacts-icons">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="img-desc-container">
                         <div class="home-image">
@@ -42,7 +67,9 @@
                         <div class="project-cell">
                             <img src="./images/project1.png" alt="project1" class="project-image">
                             <div class="project-description">
-                                <h2>Chess</h2>
+                                <a href="https://superb-meerkat-f3b03d.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <h2>Chess</h2>
+                                </a>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Accusamus perspiciatis, fuga excepturi architecto voluptatibus 
@@ -92,9 +119,10 @@
                             <li class="skill-name">React</li>
                             <li class="skill-name">Node.js</li>
                             <li class="skill-name">Express.js</li>
-                            <li class="skill-name">MongoDB</li>
+                            <li class="skill-name">PostgressSQL</li>
                             <li class="skill-name">MySQL</li>
                             <li class="skill-name">Git</li>
+                            <li class="skill-name">Kotlin</li>
                         </ul>
                     </div>
                     <div class="skill-bar-container">
@@ -111,6 +139,7 @@
                             <li id="skill-bar-10" class="skill-bar"></li>
                             <li id="skill-bar-11" class="skill-bar"></li>
                             <li id="skill-bar-12" class="skill-bar"></li>
+                            <li id="skill-bar-13" class="skill-bar"></li>
                         </ul>
                     </div>
                 </div>
@@ -121,7 +150,9 @@
                         <a href="mailto:rkumar51@horizon.csueastbay.edu">
                             <img src="./images/email.png" alt="email" id="email" class="contacts-icons">
                         </a>
-                        <img src="./images/discord.png" alt="discord" id="discord" class="contacts-icons">
+                        <a href="dp" onclick="copyDiscordName(event)">
+                            <img src="./images/discord.png" alt="discord" id="discord" class="contacts-icons">
+                        </a>
                         <a href="https://github.com/Rohan-Kumar09" target="_blank" rel="noopener noreferrer">
                             <img src="./images/github.png" alt="github" id="github" class="contacts-icons">
                         </a>
