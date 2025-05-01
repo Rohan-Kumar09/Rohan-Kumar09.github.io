@@ -4,56 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohan Kumar's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio of Rohan Kumar, Software Developer. Explore projects, skills, and contact information.">
+    <meta name="author" content="Rohan Kumar">
+
+    <meta property="og:title" content="Rohan Kumar's Portfolio">
+    <meta property="og:description" content="Portfolio of Rohan Kumar, Software Developer. Explore projects, skills, and contact information.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Rohan-Kumar09.github.io/">
+    <meta property="og:image" content="https://Rohan-Kumar09.github.io/images/no-image-icon.png">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.min.css">
 </head>
 <body>
+    <noscript>
+        <div style="color: red; text-align: center; margin: 2em;">
+            This site requires JavaScript to function properly. Please enable JavaScript in your browser settings.
+        </div>
+    </noscript>
     <div class="main-container">
         <div class="content">
             <section id="home" class="content-section">
-                <div class="home-content-container">
-                    <div class="home-text">
-                        <div class="home-title-first-cell"> <!-- divs for adjusting name above picture -->
+                <div class="home-grid">
+                    <div class="home-first-row">
+                        <div class="home-image">
+                            <img src="./images/rohan.jpeg" alt="Rohan Kumar" loading="lazy">
+                        </div>
+                        <div class="home-title"> <!-- divs for adjusting name above picture -->
                             <h6>Hello, My name is</h6>
                             <h1>Rohan Kumar</h1>
-                            <h6>and I'm a</h6>
+                            <h6>I'm a</h6>
                             <h2>Software Developer</h2>
                         </div>
-                        <div class="home-title-second-cell">
-                            <div class="home-resume-container">
-                                <a href="./files/resume.pdf" target="_blank" rel="noopener noreferrer">
-                                    <button class="resume-button">Resume</button>
-                                </a>
-                            </div>
-                            <div class="home-contacts-bar">
-                                <a href="https://github.com/Rohan-Kumar09" target="_blank" rel="noopener noreferrer">
-                                    <img src="./images/github.png" alt="github" id="github" class="contacts-icons">
-                                </a>
-                                <a href="https://www.linkedin.com/in/rohankumar099" target="_blank" rel="noopener noreferrer">
-                                    <img src="./images/linkedin.png" alt="linkedin" id="linkedin" class="contacts-icons">
-                                </a>
-                                <a href="dp" onclick="copyDiscordName(event)">
-                                    <img src="./images/discord.png" alt="discord" id="discord" class="contacts-icons">
-                                </a>
-                                <a href="mailto:rkumar51@horizon.csueastbay.edu">
-                                    <img src="./images/email.png" alt="email" id="email" class="contacts-icons">
-                                </a>
-                                <a href="./message/message.html" target="_blank" rel="noopener noreferrer">
-                                    <img src="./images/instagram.png" alt="instagram" id="instagram" class="contacts-icons">
-                                </a>
-                            </div>
-                        </div>
                     </div>
-                    <div class="img-desc-container">
-                        <div class="home-image">
-                            <img src="./images/rohan.png" alt="Rohan Kumar">
+                    <div class="home-second-row">
+                        <p>
+                            Current favorite languages: JavaScript and Python.<br>
+                            Current Hobbies: Feeding my obsession with new technologies, Chess and Gaming.
+                        </p>
+                    </div>
+                    <div class="home-third-row">
+                        <div class="home-resume-container">
+                            <a href="./files/resume.pdf" target="_blank" rel="noopener noreferrer">
+                                <button class="resume-button">Resume</button>
+                            </a>
                         </div>
-                        <div class="home-description">
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Accusamus perspiciatis, fuga excepturi architecto voluptatibus 
-                                unde. Natus harum sit aut sequi illum, ratione vel. Omnis harum
-                                nobis vitae eius, odit eum.
-                            </p>
+                        <div class="home-contacts-bar">
+                            <a href="https://github.com/Rohan-Kumar09" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/github.png" alt="github" id="github" class="contacts-icons">
+                            </a>
+                            <a href="https://www.linkedin.com/in/rohankumar099" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/linkedin.png" alt="linkedin" id="linkedin" class="contacts-icons">
+                            </a>
+                            <a href="dp" onclick="copyDiscordName(event)">
+                                <img src="./images/discord.png" alt="discord" id="discord" class="contacts-icons">
+                            </a>
+                            <a href="mailto:rkumar51@horizon.csueastbay.edu">
+                                <img src="./images/email.png" alt="email" id="email" class="contacts-icons">
+                            </a>
+                            <a href="./message/message.html" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/instagram.png" alt="instagram" id="instagram" class="contacts-icons">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -65,43 +76,154 @@
                 <div class="projects-container">
                     <div id="first-project" class="project-item">
                         <div class="project-cell">
-                            <img src="./images/project1.png" alt="project1" class="project-image">
+                            <a href="https://bejewelled-selkie-1046bf.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/project1.png" alt="project1" class="project-image" loading="lazy">
+                            </a>
                             <div class="project-description">
-                                <a href="https://superb-meerkat-f3b03d.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://bejewelled-selkie-1046bf.netlify.app/" target="_blank" rel="noopener noreferrer">
                                     <h2>Chess</h2>
                                 </a>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Accusamus perspiciatis, fuga excepturi architecto voluptatibus 
-                                    unde. Natus harum sit aut sequi illum, ratione vel. Omnis harum
-                                    nobis vitae eius, odit eum.
+                                    A static chess web app build using <b>React.js, stockfish.js,
+                                    CSS and javaScript</b>. This app let's users play chess against the
+                                    famous chess engine stockfish at various difficulty levels.
                                 </p>
-                            </div>       
+                            </div>
                         </div>
                     </div>
                     <div id="second-project" class="project-item">
-                        <div class="project-cell"></div>
+                        <div class="project-cell">
+                            <a href="https://github.com/Rohan-Kumar09/PianoQuizApp" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/project2.png" alt="project2" class="project-image" loading="lazy">
+                            </a>
+                            <div class="project-description">
+                                <a href="https://github.com/Rohan-Kumar09/PianoQuizApp" target="_blank" rel="noopener noreferrer">
+                                    <h2>Piano Quiz</h2>
+                                </a>
+                                <p>
+                                    An android app built with <b>Java</b>. It's a piano quiz app
+                                    that challenges users to identify notes by hearing them. Additionally
+                                    it offers a keyboard that allows the user to play and practice
+                                    the notes.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div id="third-project" class="project-item">
-                        <div class="project-cell"></div>
+                        <div class="project-cell">
+                            <a href="https://github.com/Rohan-Kumar09/SoulShooter" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/project3.png" alt="project3" class="project-image" loading="lazy">
+                            </a>
+                            <div class="project-description">
+                                <a href="https://github.com/Rohan-Kumar09/SoulShooter" target="_blank" rel="noopener noreferrer">
+                                    <h2>Soul Shooter</h2>
+                                </a>
+                                <p>
+                                    A 2D survival game built using <b>Kotlin</b> in <b>Android Studio</b>. 
+                                    A top-down shooter where the player can choose to spawn the amount of enemies
+                                    and ammunition.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div id="4th-project" class="project-item">
-                        <div class="project-cell"></div>
+                        <div class="project-cell">
+                            <a href="https://github.com/Rohan-Kumar09/DVDLib" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/project4.png" alt="project4" class="project-image" loading="lazy">
+                            </a>
+                            <div class="project-description">
+                                <a href="https://github.com/Rohan-Kumar09/DVDLib" target="_blank" rel="noopener noreferrer">
+                                    <h2>DVD Library</h2>
+                                </a>
+                                <p>
+                                    A DVD library management system built using <b>Java</b>. It allows users to
+                                    add, remove, modify, search and save DVDs.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div id="5th-project" class="project-item">
-                        <div class="project-cell"></div>
+                        <div class="project-cell">
+                            <a href="https://github.com/Rohan-Kumar09/ConsumerProducerSync" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/no-image-icon.png" alt="project5" class="project-image" loading="lazy">
+                            </a>
+                            <div class="project-description">
+                                <a href="https://github.com/Rohan-Kumar09/ConsumerProducerSync" target="_blank" rel="noopener noreferrer">
+                                    <h2>Synchronizer</h2>
+                                </a>
+                                <p>
+                                    A consumer producer synchronization program built using <b>C</b>. It uses
+                                    the <b>Semaphore</b> and <b>Mutex locks</b> to solve the synchronization problem.
+                                    Uses a commandline interface.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div id="6th-project" class="project-item">
-                        <div class="project-cell"></div>
+                        <div class="project-cell">
+                            <a href="https://github.com/Rohan-Kumar09/MIPS_StringLibrary" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/project6.png" alt="project6" class="project-image" loading="lazy">
+                            </a>
+                            <div class="project-description">
+                                <a href="https://github.com/Rohan-Kumar09/MIPS_StringLibrary" target="_blank" rel="noopener noreferrer">
+                                    <h2>StringLib</h2>
+                                </a>
+                                <p>
+                                    A <b>MIPS Assembly</b> string library that implements 10 types of 
+                                    string manipulations. It consists of a main driver program that uses
+                                    command line interface.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div id="7th-project" class="project-item">
-                        <div class="project-cell"></div>
+                        <div class="project-cell">
+                            <a href="https://github.com/Rohan-Kumar09/Class-Project" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/no-image-icon.png" alt="project7" class="project-image" loading="lazy">
+                            </a>
+                            <div class="project-description">
+                                <a href="https://github.com/Rohan-Kumar09/Class-Project" target="_blank" rel="noopener noreferrer">
+                                    <h2>Banking App</h2>
+                                </a>
+                                <p>
+                                    Collaborated with a team of four developers on a client-server banking
+                                    application that utilizes <b>TCP/IP</b> written in <b>java</b>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div id="8th-project" class="project-item">
-                        <div class="project-cell"></div>
+                        <div class="project-cell">
+                            <a href="https://github.com/Rohan-Kumar09/ArgumentativeAI" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/no-image-icon.png" alt="project8" class="project-image" loading="lazy">
+                            </a>
+                            <div class="project-description">
+                                <a href="https://github.com/Rohan-Kumar09/ArgumentativeAI" target="_blank" rel="noopener noreferrer">
+                                    <h2>Argumentative AI</h2>
+                                </a>
+                                <p>
+                                    A simple philosopher chatbot made with <b>JavaScript, Node.js</b> to
+                                    generate arguments based on the given topic. It has a GUI to for chatting.
+                                    Works with api key or locally hosted models.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div id="9th-project" class="project-item">
-                        <div class="project-cell"></div>
+                        <div class="project-cell">
+                            <a href="https://github.com/Rohan-Kumar09/TicTacToe" target="_blank" rel="noopener noreferrer">
+                                <img src="./images/project9.png" alt="project9" class="project-image" loading="lazy">
+                            </a>
+                            <div class="project-description">
+                                <a href="https://github.com/Rohan-Kumar09/TicTacToe" target="_blank" rel="noopener noreferrer">
+                                    <h2>Tic Tac Toe</h2>
+                                </a>
+                                <p>
+                                    A simple tic tac toe app built using <b>Java</b>. It allows users to play
+                                    against another player on a 3x3 board.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -123,6 +245,7 @@
                             <li class="skill-name">MySQL</li>
                             <li class="skill-name">Git</li>
                             <li class="skill-name">Kotlin</li>
+                            <li class="skill-name">Mips Assembly</li>
                         </ul>
                     </div>
                     <div class="skill-bar-container">
@@ -140,6 +263,7 @@
                             <li id="skill-bar-11" class="skill-bar"></li>
                             <li id="skill-bar-12" class="skill-bar"></li>
                             <li id="skill-bar-13" class="skill-bar"></li>
+                            <li id="skill-bar-14" class="skill-bar"></li>
                         </ul>
                     </div>
                 </div>
@@ -167,7 +291,7 @@
             </section>
         </div>
         <div class="footer-container">
-            <div class="footer">
+            <footer class="footer">
                 <div class="img-container">
                     <img src="./images/sun.png" alt="logo" id="color-logo" class="sun" onclick="changeMode()">
                 </div>
@@ -196,7 +320,7 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </footer>
         </div>
     </div>
     <script src="../src/index.js"></script>
