@@ -1,7 +1,7 @@
 const black = "black";
 const white = "white";
-const sunImage = "./images/sun.png";
-const moonImage = "./images/moon.png";
+const sunImage = "../public/images/sun.png";
+const moonImage = "../public/images/moon.png";
 const sun = 'sun';
 const moon = 'moon';
 const navbarHideTime = 2000; // 2 seconds
