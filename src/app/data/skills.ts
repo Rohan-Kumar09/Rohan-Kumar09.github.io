@@ -1,4 +1,4 @@
-import { SkillCardProps } from "../lib/definitions";
+import { SkillCardProps } from "@/app/lib/definitions";
 
 export const skills: SkillCardProps[] = [
     {

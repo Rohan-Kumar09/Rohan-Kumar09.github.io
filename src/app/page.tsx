@@ -1,12 +1,12 @@
 "use client"
 
-import { icons } from "./data/icons";
+import { icons } from "@/app/data/icons";
 import { useState } from "react";
 import Image from "next/image";
-import { NavItem, ThemeToggle, SocialLink, NavDivider, ProjectCard, SkillsCard } from "./components/components";
-import { projects } from "./data/projects";
-import { skills } from "./data/skills";
-import { contacts } from "./data/contacts";
+import { NavItem, ThemeToggle, SocialLink, NavDivider, ProjectCard, SkillsCard } from "@/app/components/components";
+import { projects } from "@/app/data/projects";
+import { skills } from "@/app/data/skills";
+import { contacts } from "@/app/data/contacts";
 
 export default function Home() {
   const [ darkMode, setDarkMode ] = useState<boolean>(true);
@@ -67,21 +67,23 @@ export default function Home() {
                   Currently exploring new technologies, playing chess, and gaming in my free time.
                 </p>
                 <div className="flex gap-8 justify-center md:justify-start items-center">
-                  <a
-                  href="#"
-                  className={`px-5 py-6 font-semibold rounded-lg
-                  transition-all duration-200
-                  shadow-lg hover:shadow-xl
-                  hover:transition-transform active:scale-90
-                  flex items-center h-8
-                  hover:outline-1 outline-blue-400 hover:text-blue-400
-                  ${darkMode
+                    <a
+                    href="/Rohan_Kumar.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`px-5 py-6 font-semibold rounded-lg
+                    transition-all duration-200
+                    shadow-lg hover:shadow-xl
+                    hover:transition-transform active:scale-90
+                    flex items-center h-8
+                    hover:outline-1 outline-blue-400 hover:text-blue-400
+                    ${darkMode
                     ? 'bg-[#1a1a1a] text-white shadow-[4px_4px_8px_#0a0a0a,-4px_-4px_8px_#2a2a2a]'
                     : 'bg-[#e0e5ec] text-gray-800 shadow-[4px_4px_8px_#b8b9be,-4px_-4px_8px_#ffffff]'
-                  }`}
-                  >
-                  Resume
-                  </a>
+                    }`}
+                    >
+                    Resume
+                    </a>
                   <SocialLink href="https://github.com/Rohan-Kumar09" icon={icons.githubIcon} darkMode={darkMode}/>
                   <SocialLink href="https://www.linkedin.com/in/rohankumar099" icon={icons.linkedinIcon} darkMode={darkMode}/>
                 </div>

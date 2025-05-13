@@ -5,9 +5,9 @@ import {
   SocialLinkProps, 
   ProjectCardProps, 
   SkillCardProps
-} from "../lib/definitions";
-import { icons } from "../data/icons";
-import { skillIcons } from "../data/icons";
+} from "@/app/lib/definitions";
+import { icons } from "@/app/data/icons";
+import { skillIcons } from "@/app/data/icons";
 
 export const NavItem = ({ href, icon, label, darkMode }: NavItemProps) => (
   <li>

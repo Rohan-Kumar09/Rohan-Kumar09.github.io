@@ -1,6 +1,6 @@
-import { SocialLinkProps } from "../lib/definitions";
-import { icons } from "./icons";
-import { copyToClipboard } from "../Utils/utils";
+import { SocialLinkProps } from "@/app/lib/definitions";
+import { icons } from "@/app/data/icons";
+import { copyToClipboard } from "@/app/Utils/utils";
 
 export const contacts: SocialLinkProps[] = [
   {
