@@ -164,17 +164,9 @@ export const SkillsCard = ({ title, skills, darkMode }: SkillCardProps) => (
             className={`flex items-center gap-4 p-3 rounded-lg cursor-default
               hover:outline-1 outline-blue-400 hover:text-blue-400
               ${darkMode ? 'bg-gray-800' : 'bg-gray-200'}`}>
-            <span className={`min-w-[120px] text-sm
+            <span className={`text-sm
               ${darkMode ? 'text-gray-200' : 'text-gray-800'}`}>
               {typeof skill === 'string' ? skill : skill.name}
-            </span>
-            <div className="flex-1 h-2 rounded-full overflow-hidden bg-gray-700">
-              <div className="h-full bg-blue-500"
-                style={{ width: `${typeof skill == 'string' ? 0 : skill.level}%` }}/>
-            </div>
-            <span className={`text-xs w-[36px]
-              ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              {typeof skill !== 'string' && skill.level ? `${skill.level}%` : 'N/A'}
             </span>
           </div>
         ))}

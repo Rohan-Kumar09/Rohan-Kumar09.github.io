@@ -7,14 +7,17 @@ import { NavItem, ThemeToggle, SocialLink, NavDivider, ProjectCard, SkillsCard }
 import { projects } from "@/app/data/projects";
 import { skills } from "@/app/data/skills";
 import { contacts } from "@/app/data/contacts";
+import { FadeIn } from "@/app/components/animations";
 
 export default function Home() {
   const [ darkMode, setDarkMode ] = useState<boolean>(true);
+
   return (
     <>
       <main className={`overflow-x-hidden ${darkMode 
         ? "absolute top-0 z-[-2] h-screen w-screen bg-black bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:8px_8px]" 
         : "absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:8px_8px]"}`}>
+        
         <nav className={`fixed top-7 left-1/2 transform -translate-x-1/2
                         py-4 rounded-4xl h-14
                         flex items-center justify-center
@@ -33,6 +36,8 @@ export default function Home() {
             <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
           </ul>
         </nav>
+
+
         <section id="home">
           <div className="container mx-auto max-w-7xl h-screen px-4">
             <div className="flex flex-col md:flex-row items-center justify-center h-screen gap-8">
@@ -91,6 +96,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+        
+        
         <section id="projects">
           <div className="container mx-auto px-4">
             <h2 className={`text-3xl font-bold mb-12 text-center
@@ -101,21 +108,25 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((projects, index) => {
                 return (
-                  <ProjectCard
-                    key={index}
-                    title={projects.title}
-                    description={projects.description}
-                    image={projects.image}
-                    href={projects.href}
-                    darkMode={darkMode}
-                    deployed={projects.deployed}
-                    skills={projects.skills}
-                  />
+                  <FadeIn key={index}>
+                    <ProjectCard
+                      key={index}
+                      title={projects.title}
+                      description={projects.description}
+                      image={projects.image}
+                      href={projects.href}
+                      darkMode={darkMode}
+                      deployed={projects.deployed}
+                      skills={projects.skills}
+                    />
+                  </FadeIn>
                 )
               })}
             </div>
           </div>
         </section>
+        
+        
         <section id="skills" className="container mx-auto px-4">
           <h2 className={`text-3xl font-bold mb-4 mt-12 text-center
             ${darkMode ? 'text-gray-100' : 'text-gray-800'}`}>
@@ -123,17 +134,21 @@ export default function Home() {
           </h2>
           <div className="flex flex-col gap-8">
             {skills.map((skill, index) => (
-              <SkillsCard
-                key={index}
-                title={skill.title}
-                skills={skill.skills}
-                darkMode={darkMode}
-              />
+              <FadeIn key={index}>
+                <SkillsCard
+                  title={skill.title}
+                  skills={skill.skills}
+                  darkMode={darkMode}
+                />
+              </FadeIn>
             ))}
           </div>
         </section>
+        
+        
         <section id="contact">
           <div className="flex justify-center items-center h-screen">
+            <FadeIn>
               <div className="flex items-center gap-12 bg-white/10 backdrop-blur-md px-6 py-6 rounded-full
                               shadow-lg hover:shadow-xl transition-all duration-200">
                 {contacts.map((contact, index) => (
@@ -147,6 +162,7 @@ export default function Home() {
                   />
                 ))}
               </div>
+            </FadeIn>
           </div>
         </section>
       </main>
