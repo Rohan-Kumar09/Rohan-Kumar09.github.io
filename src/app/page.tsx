@@ -63,13 +63,14 @@ export default function Home() {
                 <p className={`text-xl ${
                   darkMode ? 'text-gray-300' : 'text-gray-700'
                 }`}>
-                  Software Developer | Recent Graduate
+                  Software Engineer | Recent Graduate
                 </p>
                 <p className={`text-lg max-w-2xl ${
                   darkMode ? 'text-gray-400' : 'text-gray-600'
                 }`}>
-                  A passionate software developer with expertise in Python, C++ and JavaScript.
-                  Currently exploring new technologies, playing chess, and gaming in my free time.
+                  Passionate Software Engineer with a strong foundation in Python, C++, and JavaScript.
+                  Aspiring Full Stack Developer eager to design and build efficient, scalable applications
+                  while continuously exploring new technologies and development practices.
                 </p>
                 <div className="flex gap-8 justify-center md:justify-start items-center">
                     <a
